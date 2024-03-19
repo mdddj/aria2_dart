@@ -1,0 +1,40 @@
+name: aria2_dart
+description: "A new Flutter FFI plugin project."
+version: 0.0.1
+homepage: https://github.com/mdddj/aria2_dart
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  flutter_rust_bridge: ^2.0.0-dev.28
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  ffi: ^2.1.0
+  ffigen: ^9.0.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true
+      ios:
+        ffiPlugin: true
+      linux:
+        ffiPlugin: true
+      macos:
+        ffiPlugin: true
+      windows:
+        ffiPlugin: true

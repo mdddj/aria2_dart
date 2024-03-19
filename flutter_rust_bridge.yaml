@@ -1,0 +1,2 @@
+rust_input: rust/src/api/**/*.rs # 需要生成dart的rust代码文件
+dart_output: lib/   # rust生成的基础代码目录,我这填的lib
