@@ -7,7 +7,7 @@ edition = "2021"
 crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
-flutter_rust_bridge = "=2.0.0-dev.28"
+flutter_rust_bridge = "=2.0.0-dev.32"
 aria2-ws = "0.4.0"
 futures = "0.3.30"
 lazy_static = "1.4.0"

@@ -1,4 +1,4 @@
-# aria2_plugin
+# aria2_dart
 
 The flutter aria2 downloader based on aria2_ws (rust) supports all platforms of Android, iOS, macOS, Windows, Linux and Web
 
@@ -9,6 +9,11 @@ development environment:`flutter:3.19.3`
 ```bash
 cd example && flutter clean
 flutter run
+```
+
+add to pubspec.yaml
+```dart
+aria2_dart: ^lastVersion
 ```
 
 # Api

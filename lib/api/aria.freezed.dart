@@ -131,8 +131,8 @@ class __$$MyError_Aria2ImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_Aria2Impl implements MyError_Aria2 {
-  const _$MyError_Aria2Impl({required this.source});
+class _$MyError_Aria2Impl extends MyError_Aria2 {
+  const _$MyError_Aria2Impl({required this.source}) : super._();
 
   @override
   final String source;
@@ -247,9 +247,10 @@ class _$MyError_Aria2Impl implements MyError_Aria2 {
   }
 }
 
-abstract class MyError_Aria2 implements MyError {
+abstract class MyError_Aria2 extends MyError {
   const factory MyError_Aria2({required final String source}) =
       _$MyError_Aria2Impl;
+  const MyError_Aria2._() : super._();
 
   String get source;
   @JsonKey(ignore: true)
@@ -295,8 +296,9 @@ class __$$MyError_ParseImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_ParseImpl implements MyError_Parse {
-  const _$MyError_ParseImpl({required this.value, required this.to});
+class _$MyError_ParseImpl extends MyError_Parse {
+  const _$MyError_ParseImpl({required this.value, required this.to})
+      : super._();
 
   @override
   final String value;
@@ -414,10 +416,11 @@ class _$MyError_ParseImpl implements MyError_Parse {
   }
 }
 
-abstract class MyError_Parse implements MyError {
+abstract class MyError_Parse extends MyError {
   const factory MyError_Parse(
       {required final String value,
       required final String to}) = _$MyError_ParseImpl;
+  const MyError_Parse._() : super._();
 
   String get value;
   String get to;
@@ -459,8 +462,8 @@ class __$$MyError_WebsocketIoImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_WebsocketIoImpl implements MyError_WebsocketIo {
-  const _$MyError_WebsocketIoImpl({required this.source});
+class _$MyError_WebsocketIoImpl extends MyError_WebsocketIo {
+  const _$MyError_WebsocketIoImpl({required this.source}) : super._();
 
   @override
   final String source;
@@ -576,9 +579,10 @@ class _$MyError_WebsocketIoImpl implements MyError_WebsocketIo {
   }
 }
 
-abstract class MyError_WebsocketIo implements MyError {
+abstract class MyError_WebsocketIo extends MyError {
   const factory MyError_WebsocketIo({required final String source}) =
       _$MyError_WebsocketIoImpl;
+  const MyError_WebsocketIo._() : super._();
 
   String get source;
   @JsonKey(ignore: true)
@@ -619,8 +623,8 @@ class __$$MyError_JsonImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_JsonImpl implements MyError_Json {
-  const _$MyError_JsonImpl({required this.source});
+class _$MyError_JsonImpl extends MyError_Json {
+  const _$MyError_JsonImpl({required this.source}) : super._();
 
   @override
   final String source;
@@ -735,9 +739,10 @@ class _$MyError_JsonImpl implements MyError_Json {
   }
 }
 
-abstract class MyError_Json implements MyError {
+abstract class MyError_Json extends MyError {
   const factory MyError_Json({required final String source}) =
       _$MyError_JsonImpl;
+  const MyError_Json._() : super._();
 
   String get source;
   @JsonKey(ignore: true)
@@ -780,8 +785,8 @@ class __$$MyError_WebsocketClosedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_WebsocketClosedImpl implements MyError_WebsocketClosed {
-  const _$MyError_WebsocketClosedImpl({required this.message});
+class _$MyError_WebsocketClosedImpl extends MyError_WebsocketClosed {
+  const _$MyError_WebsocketClosedImpl({required this.message}) : super._();
 
   @override
   final String message;
@@ -897,9 +902,10 @@ class _$MyError_WebsocketClosedImpl implements MyError_WebsocketClosed {
   }
 }
 
-abstract class MyError_WebsocketClosed implements MyError {
+abstract class MyError_WebsocketClosed extends MyError {
   const factory MyError_WebsocketClosed({required final String message}) =
       _$MyError_WebsocketClosedImpl;
+  const MyError_WebsocketClosed._() : super._();
 
   String get message;
   @JsonKey(ignore: true)
@@ -942,9 +948,8 @@ class __$$MyError_ReconnectTaskTimeoutImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyError_ReconnectTaskTimeoutImpl
-    implements MyError_ReconnectTaskTimeout {
-  const _$MyError_ReconnectTaskTimeoutImpl({required this.source});
+class _$MyError_ReconnectTaskTimeoutImpl extends MyError_ReconnectTaskTimeout {
+  const _$MyError_ReconnectTaskTimeoutImpl({required this.source}) : super._();
 
   @override
   final String source;
@@ -1061,9 +1066,10 @@ class _$MyError_ReconnectTaskTimeoutImpl
   }
 }
 
-abstract class MyError_ReconnectTaskTimeout implements MyError {
+abstract class MyError_ReconnectTaskTimeout extends MyError {
   const factory MyError_ReconnectTaskTimeout({required final String source}) =
       _$MyError_ReconnectTaskTimeoutImpl;
+  const MyError_ReconnectTaskTimeout._() : super._();
 
   String get source;
   @JsonKey(ignore: true)
@@ -1180,8 +1186,9 @@ class __$$MyNotification_Aria2ImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyNotification_Aria2Impl implements MyNotification_Aria2 {
-  const _$MyNotification_Aria2Impl({required this.gid, required this.event});
+class _$MyNotification_Aria2Impl extends MyNotification_Aria2 {
+  const _$MyNotification_Aria2Impl({required this.gid, required this.event})
+      : super._();
 
   @override
   final String gid;
@@ -1286,10 +1293,11 @@ class _$MyNotification_Aria2Impl implements MyNotification_Aria2 {
   }
 }
 
-abstract class MyNotification_Aria2 implements MyNotification {
+abstract class MyNotification_Aria2 extends MyNotification {
   const factory MyNotification_Aria2(
       {required final String gid,
       required final MyEvent event}) = _$MyNotification_Aria2Impl;
+  const MyNotification_Aria2._() : super._();
 
   String get gid;
   MyEvent get event;
@@ -1320,8 +1328,8 @@ class __$$MyNotification_WebSocketConnectedImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$MyNotification_WebSocketConnectedImpl
-    implements MyNotification_WebSocketConnected {
-  const _$MyNotification_WebSocketConnectedImpl();
+    extends MyNotification_WebSocketConnected {
+  const _$MyNotification_WebSocketConnectedImpl() : super._();
 
   @override
   String toString() {
@@ -1411,9 +1419,10 @@ class _$MyNotification_WebSocketConnectedImpl
   }
 }
 
-abstract class MyNotification_WebSocketConnected implements MyNotification {
+abstract class MyNotification_WebSocketConnected extends MyNotification {
   const factory MyNotification_WebSocketConnected() =
       _$MyNotification_WebSocketConnectedImpl;
+  const MyNotification_WebSocketConnected._() : super._();
 }
 
 /// @nodoc
@@ -1438,8 +1447,8 @@ class __$$MyNotification_WebsocketClosedImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$MyNotification_WebsocketClosedImpl
-    implements MyNotification_WebsocketClosed {
-  const _$MyNotification_WebsocketClosedImpl();
+    extends MyNotification_WebsocketClosed {
+  const _$MyNotification_WebsocketClosedImpl() : super._();
 
   @override
   String toString() {
@@ -1529,9 +1538,10 @@ class _$MyNotification_WebsocketClosedImpl
   }
 }
 
-abstract class MyNotification_WebsocketClosed implements MyNotification {
+abstract class MyNotification_WebsocketClosed extends MyNotification {
   const factory MyNotification_WebsocketClosed() =
       _$MyNotification_WebsocketClosedImpl;
+  const MyNotification_WebsocketClosed._() : super._();
 }
 
 /// @nodoc
@@ -1633,8 +1643,8 @@ class __$$MyValue_BoolImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyValue_BoolImpl implements MyValue_Bool {
-  const _$MyValue_BoolImpl(this.field0);
+class _$MyValue_BoolImpl extends MyValue_Bool {
+  const _$MyValue_BoolImpl(this.field0) : super._();
 
   @override
   final bool field0;
@@ -1730,8 +1740,9 @@ class _$MyValue_BoolImpl implements MyValue_Bool {
   }
 }
 
-abstract class MyValue_Bool implements MyValue {
+abstract class MyValue_Bool extends MyValue {
   const factory MyValue_Bool(final bool field0) = _$MyValue_BoolImpl;
+  const MyValue_Bool._() : super._();
 
   @override
   bool get field0;
@@ -1773,8 +1784,8 @@ class __$$MyValue_StringImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyValue_StringImpl implements MyValue_String {
-  const _$MyValue_StringImpl(this.field0);
+class _$MyValue_StringImpl extends MyValue_String {
+  const _$MyValue_StringImpl(this.field0) : super._();
 
   @override
   final String field0;
@@ -1871,8 +1882,9 @@ class _$MyValue_StringImpl implements MyValue_String {
   }
 }
 
-abstract class MyValue_String implements MyValue {
+abstract class MyValue_String extends MyValue {
   const factory MyValue_String(final String field0) = _$MyValue_StringImpl;
+  const MyValue_String._() : super._();
 
   @override
   String get field0;
@@ -1914,8 +1926,10 @@ class __$$MyValue_ArrayImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MyValue_ArrayImpl implements MyValue_Array {
-  const _$MyValue_ArrayImpl(final List<MyValue> field0) : _field0 = field0;
+class _$MyValue_ArrayImpl extends MyValue_Array {
+  const _$MyValue_ArrayImpl(final List<MyValue> field0)
+      : _field0 = field0,
+        super._();
 
   final List<MyValue> _field0;
   @override
@@ -2017,8 +2031,9 @@ class _$MyValue_ArrayImpl implements MyValue_Array {
   }
 }
 
-abstract class MyValue_Array implements MyValue {
+abstract class MyValue_Array extends MyValue {
   const factory MyValue_Array(final List<MyValue> field0) = _$MyValue_ArrayImpl;
+  const MyValue_Array._() : super._();
 
   @override
   List<MyValue> get field0;

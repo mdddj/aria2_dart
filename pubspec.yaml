@@ -1,6 +1,6 @@
 name: aria2_dart
-description: "A new Flutter FFI plugin project."
-version: 0.0.1
+description: "Dart operation aria2 download api"
+version: 0.0.2
 homepage: https://github.com/mdddj/aria2_dart
 
 environment:
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
-  flutter_rust_bridge: ^2.0.0-dev.28
+  plugin_platform_interface: ^2.1.8
+  flutter_rust_bridge: 2.0.0-dev.32
   freezed_annotation: ^2.4.1
   json_annotation: ^4.8.1
 
